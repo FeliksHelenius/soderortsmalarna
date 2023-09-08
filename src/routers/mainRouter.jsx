@@ -29,7 +29,7 @@ const router = createBrowserRouter(
 			],
 		},
 	],
-	{ basename: import.meta.env.DEV ? '/' : '/soderortsmalarna' }
+	{ basename: import.meta.env.DEV ? '/soderortsmalarna' : '/soderortsmalarna' }
 );
 
 export default router;
