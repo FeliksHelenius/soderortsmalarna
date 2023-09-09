@@ -1,8 +1,10 @@
 import { configureStore } from '@reduxjs/toolkit';
-import counterReducer from './counterSlice';
+import landingModalSlice from './landingModalSlice';
+import galleryModalSlice from './galleryModalSlice';
 
 export default configureStore({
 	reducer: {
-		landingModal: counterReducer,
+		landingModal: landingModalSlice,
+		galleryModal: galleryModalSlice,
 	},
 });

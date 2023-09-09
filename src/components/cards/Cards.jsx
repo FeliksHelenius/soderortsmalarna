@@ -1,11 +1,11 @@
 //React Imports
-import { Typography, Card, CardContent } from '@mui/material';
+import { Typography, Card, CardContent, Divider } from '@mui/material';
 //Component Imports
 import CustomCardMedia from './CardMedia';
 //Image Imports
-import ExperienceImage from '../../assets/images/2.jpg';
-import SolutionsImage from '../../assets/images/4.jpg';
-import SatisfactionImage from '../../assets/images/7.jpg';
+import ExperienceImage from '../../assets/images/first-example.jpg';
+import SolutionsImage from '../../assets/images/second-example.jpg';
+import SatisfactionImage from '../../assets/images/third-example.jpg';
 //Icon imports
 
 const defaultCardStyle = {

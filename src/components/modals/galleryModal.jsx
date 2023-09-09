@@ -1,18 +1,15 @@
 import { Box, Button, Modal, Typography, Container } from '@mui/material';
 import { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import { closeModal } from '../../landingModalSlice';
+import { closeModal } from '../../galleryModalSlice';
 //Icon Imports
 import CloseFullscreenIcon from '@mui/icons-material/CloseFullscreen';
 
-export default function LandingModal() {
-	const isOpen = useSelector((state) => state.landingModal.value);
-	const image = useSelector((state) => state.landingModal.image);
+export default function GalleryModal() {
+	const isOpen = useSelector((state) => state.galleryModal.value);
+	const image = useSelector((state) => state.galleryModal.image);
 	const dispatch = useDispatch();
 
-	useEffect(() => {
-		console.log(isOpen);
-	});
 	return (
 		<Modal
 			open={isOpen}

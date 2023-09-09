@@ -2,7 +2,7 @@
 import React from 'react';
 import { CardMedia, IconButton, Tooltip } from '@mui/material';
 import { useDispatch } from 'react-redux';
-import { openModal } from '../../counterSlice';
+import { openModal } from '../../landingModalSlice';
 import { PropTypes } from 'prop-types';
 //Icon imports
 import OpenInFullIcon from '@mui/icons-material/OpenInFull';

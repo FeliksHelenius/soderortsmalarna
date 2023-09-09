@@ -62,6 +62,11 @@ const Theme = createTheme({
 			fontWeight: 400,
 			fontFamily: 'Poppins',
 		},
+		p3: {
+			fontSize: '0.6rem',
+			fontWeight: 400,
+			fontFamily: 'Poppins',
+		},
 	},
 
 	// components: {
