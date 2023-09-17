@@ -6,7 +6,7 @@ const Theme = createTheme({
 			main: '#003366',
 		},
 		secondary: {
-			main: '#0988b0',
+			main: '#003973',
 		},
 		action: {
 			main: '#d54708',
@@ -14,7 +14,7 @@ const Theme = createTheme({
 		text: {
 			header: '#fff',
 			light: '#dfdfdf',
-			dark: '#808080',
+			dark: '#707070',
 		},
 		dark: {
 			main: '#404040',
@@ -24,6 +24,23 @@ const Theme = createTheme({
 		},
 		background: {
 			paper: '#fff',
+		},
+	},
+	components: {
+		MuiTextField: {
+			defaultProps: {
+				variant: 'filled',
+				fullWidth: true,
+				InputProps: {
+					style: {
+						color: '#fff',
+						backgroundColor: '#707070',
+					},
+				},
+				InputLabelProps: {
+					style: { color: '#dfdfdf' },
+				},
+			},
 		},
 	},
 	typography: {

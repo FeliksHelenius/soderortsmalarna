@@ -27,11 +27,6 @@ export default function Header() {
 	const handleCloseNavMenu = () => {
 		setAnchorElNav(null);
 	};
-	React.useEffect(() => {
-		menuPages.map((page) => {
-			console.log(page);
-		});
-	});
 
 	return (
 		<AppBar
@@ -65,7 +60,7 @@ export default function Header() {
 				<Box
 					sx={{
 						display: { xs: 'none', md: 'flex' },
-						gap: 2,
+						gap: 3,
 						justifyContent: 'end',
 						alignItems: 'center',
 						mr: 2.5,

@@ -1,38 +1,19 @@
 //React Imports
-import { Typography, Card, CardContent, Divider } from '@mui/material';
+import { Typography, Card, CardContent } from '@mui/material';
 //Component Imports
-import CustomCardMedia from './CardMedia';
+import CustomCardMedia from './CustomCardMedia';
 //Image Imports
 import ExperienceImage from '../../assets/images/first-example.jpg';
 import SolutionsImage from '../../assets/images/second-example.jpg';
 import SatisfactionImage from '../../assets/images/third-example.jpg';
-//Icon imports
-
-const defaultCardStyle = {
-	maxWidth: { xs: '18rem', md: '20rem' },
-	minHeight: '20rem',
-	pb: 4,
-	justifyContent: 'center',
-	alignItems: 'center',
-	transition: 'all 300ms',
-	':hover': { md: { transform: 'translateY(-0.2rem)' } },
-	bgcolor: { xs: 'dark.main', md: 'light.main' },
-};
-
-const defaultCardContentStyle = {
-	display: 'flex',
-	flexDirection: 'column',
-	justifyContent: 'center',
-	alignItems: { xs: 'left', md: 'center' },
-	textAlign: { xs: 'left', md: 'center' },
-	color: { xs: 'light.main', md: 'text.dark' },
-};
+//style imports
+import { defaultCardStyles } from './defaultCardStyles';
 
 const ExperienceCard = (props) => {
 	return (
-		<Card elevation={4} sx={defaultCardStyle} {...props}>
+		<Card elevation={4} sx={defaultCardStyles.defaultCardStyle} {...props}>
 			<CustomCardMedia image={ExperienceImage} />
-			<CardContent sx={defaultCardContentStyle}>
+			<CardContent sx={defaultCardStyles.defaultCardContentStyle}>
 				<Typography variant={'h3'} sx={{ py: 2 }}>
 					Erfarenhet och Expertis
 				</Typography>
@@ -47,9 +28,9 @@ const ExperienceCard = (props) => {
 
 const SolutionsCard = (props) => {
 	return (
-		<Card elevation={4} sx={defaultCardStyle} {...props}>
+		<Card elevation={4} sx={defaultCardStyles.defaultCardStyle} {...props}>
 			<CustomCardMedia image={SolutionsImage} />
-			<CardContent sx={defaultCardContentStyle}>
+			<CardContent sx={defaultCardStyles.defaultCardContentStyle}>
 				<Typography variant="h3" sx={{ py: 2 }}>
 					Skräddarsydda Lösningar
 				</Typography>
@@ -64,9 +45,9 @@ const SolutionsCard = (props) => {
 
 const SatisfactionCard = (props) => {
 	return (
-		<Card elevation={4} sx={defaultCardStyle} {...props}>
+		<Card elevation={4} sx={defaultCardStyles.defaultCardStyle} {...props}>
 			<CustomCardMedia image={SatisfactionImage} />
-			<CardContent sx={defaultCardContentStyle}>
+			<CardContent sx={defaultCardStyles.defaultCardContentStyle}>
 				<Typography variant="h3" sx={{ py: 2 }}>
 					Kundnöjdhet
 				</Typography>

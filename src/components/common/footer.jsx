@@ -85,7 +85,7 @@ export default function Footer() {
 								transition: 'none',
 								':hover': { borderRadius: 2 },
 							}}>
-							<PhoneIcon color="secondary" />
+							<PhoneIcon color="light.main" />
 							<a href="tel:073-546 90 51" rel="noreferrer" target="_blank">
 								<Typography variant="h5">073-546 90 51</Typography>
 							</a>
@@ -107,7 +107,7 @@ export default function Footer() {
 								transition: 'none',
 								':hover': { borderRadius: 2 },
 							}}>
-							<EmailIcon color="secondary" />
+							<EmailIcon color="light.main" />
 							<a
 								href="mailto: rikard@soderortsmalarna.se"
 								rel="noreferrer"
@@ -132,7 +132,7 @@ export default function Footer() {
 								transition: 'none',
 								':hover': { borderRadius: 2 },
 							}}>
-							<FacebookIcon color="secondary" />
+							<FacebookIcon color="light.main" />
 							<a
 								href="https://www.facebook.com/soderortsmalarna/"
 								rel="noreferrer"
@@ -157,7 +157,7 @@ export default function Footer() {
 								transition: 'none',
 								':hover': { borderRadius: 2 },
 							}}>
-							<InstagramIcon color="secondary" />
+							<InstagramIcon color="light.main" />
 							<a
 								href="https://www.instagram.com/soderortsmalarna/"
 								rel="noreferrer"

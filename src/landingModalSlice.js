@@ -10,6 +10,8 @@ export const counterSlice = createSlice({
 		openModal: (state, action) => {
 			state.value = true;
 			state.image = action.payload;
+			console.log(state, action);
+			console.log(state.value, state.image);
 		},
 		closeModal: (state) => {
 			state.value = false;
