@@ -8,7 +8,6 @@ import {
 } from '@mui/material';
 import PhoneIcon from '@mui/icons-material/Phone';
 import EmailIcon from '@mui/icons-material/Mail';
-import SplatteredPaint from '../../assets/custom_svgs/SplatteredPaint';
 
 export default function Contact() {
 	return (
@@ -153,7 +152,6 @@ export default function Contact() {
 									</Typography>
 								</a>
 							</IconButton>
-							<SplatteredPaint width="594.62" height="756.08" />
 						</Box>
 					</Box>
 				</Box>

@@ -128,9 +128,9 @@ export default function Landing() {
 							fontSize={{ xs: '0.7rem', md: '0.9rem' }}>
 							På Söderortsmålarna AB tvekar vi inte när det kommer till målning,
 							med våran erfarenhet och kundcentrerad inställning så kan vi
-							garantera att du blir nöjd med vårat arbete. Vi har målat allt
-							från bostäder till företag och vi är stolta över att kunna erbjuda
-							våra tjänster till dig.
+							garantera att du blir nöjd med vårat arbete. Vi har målat för
+							Brfer, företag och privatpersoner. Vi är stolta över att kunna
+							erbjuda våra måleritjänster till dig.
 						</Typography>
 						<Box
 							component={'img'}
@@ -255,9 +255,9 @@ export default function Landing() {
 								Utomhusmålning
 							</Typography>
 							<Typography variant="p2" color={'dark.dark'} pt={2}>
-								Höj din fastighets gatukonst med våra utomhusmålningstjänster.
-								Vi använder hållbara, väderbeständiga färger för att skydda din
-								investering.
+								Höj värdet på din fastighet med en väl omhändertagen fasad med
+								hjälp av våra utomhusmålningstjänster. Vi använder hållbara,
+								väderbeständiga färger för att skydda din investering.
 							</Typography>
 						</CardContent>
 					</Card>
