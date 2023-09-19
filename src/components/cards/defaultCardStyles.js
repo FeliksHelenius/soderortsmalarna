@@ -1,6 +1,6 @@
 const defaultCardStyle = {
-	maxWidth: { xs: '18rem', md: '20rem' },
-	minHeight: '20rem',
+	minWidth: { xs: '22rem', md: '26rem' },
+	minHeight: '30rem',
 	pb: 4,
 	justifyContent: 'center',
 	alignItems: 'center',
@@ -13,8 +13,8 @@ const defaultCardContentStyle = {
 	display: 'flex',
 	flexDirection: 'column',
 	justifyContent: 'center',
-	alignItems: { xs: 'left', md: 'center' },
-	textAlign: { xs: 'left', md: 'center' },
+	alignItems: 'center',
+	textAlign: 'center',
 	color: { xs: 'light.main', md: 'text.dark' },
 };
 

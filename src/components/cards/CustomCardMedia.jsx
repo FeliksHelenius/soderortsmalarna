@@ -9,8 +9,8 @@ import OpenInFullIcon from '@mui/icons-material/OpenInFull';
 
 //Default Styles
 const cardMediaStyle = {
-	height: '10rem',
-	maxWidth: '20rem',
+	height: '15rem',
+	minWidth: { xs: '22rem', md: '26rem' },
 	transition: 'all 300ms',
 	position: 'relative',
 	':hover:after': {
@@ -60,8 +60,8 @@ export default function CustomCardMedia(props) {
 							display: {},
 							position: 'absolute',
 							zIndex: '1',
-							ml: 35,
-							mt: 15,
+							ml: 44,
+							mt: 22,
 						}}>
 						<OpenInFullIcon />
 					</IconButton>
@@ -77,8 +77,8 @@ export default function CustomCardMedia(props) {
 					display: { xs: 'block', md: 'none' },
 					position: 'absolute',
 					zIndex: '1',
-					ml: 31,
-					mt: 15,
+					ml: 39,
+					mt: 25,
 				}}>
 				<OpenInFullIcon />
 			</IconButton>

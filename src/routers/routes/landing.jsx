@@ -14,14 +14,13 @@ import Cards from '../../components/cards/Cards';
 import PainterIllustration from '../../assets/images/painter-illustration.jpg';
 import MissionIllustration from '../../assets/images/mission-illustration.png';
 //image imports
-import HousePaintingImage from '../../assets/images/gallery/soderortsmalarna17.jpg';
-import CommercialPaintingImage from '../../assets/images/gallery/soderortsmalarna1.jpg';
-import OutdoorsPaintingImage from '../../assets/images/gallery/soderortsmalarna24.jpg';
+
 import BackgroundImage from '../../assets/images/about-background.jpg';
 //style imports
 import { defaultCardStyles } from '../../components/cards/defaultCardStyles';
 import { ArrowRightAlt } from '@mui/icons-material';
 import { Link } from 'react-router-dom';
+import LandingPageCarousel from '../../components/carousels/LandingPageCarousel';
 
 export default function Landing() {
 	return (
@@ -45,9 +44,10 @@ export default function Landing() {
 					backgroundAttachment: 'fixed',
 					backgroundSize: 'cover',
 					backgroundPositionY: 'top',
-					minHeight: 'fit-content',
-					height: { xs: '25rem', md: '60svh' },
+					// height: { xs: '25rem', md: '60svh' },
+					height: 'fit-content',
 					width: '100svw',
+					pb: 10,
 				}}>
 				<Box pt={10}>
 					<Typography
@@ -61,7 +61,7 @@ export default function Landing() {
 						variant="h3"
 						color={'text.light'}
 						textAlign={'center'}
-						fontSize={{ xs: '1rem', md: '1.5rem' }}>
+						fontSize={{ xs: '1.25rem', md: '1.5rem' }}>
 						Dina pålitliga målare från söderort.
 					</Typography>
 				</Box>
@@ -83,7 +83,7 @@ export default function Landing() {
 								variant="h4"
 								color={'light.main'}
 								fontWeight={'bold'}
-								fontSize={{ xs: '0.7rem', md: '1.25rem' }}>
+								fontSize={{ xs: '1.25rem', md: '1.25rem' }}>
 								Kontakta oss
 							</Typography>
 						</Button>
@@ -96,7 +96,7 @@ export default function Landing() {
 								variant="h4"
 								color={'light.main'}
 								fontWeight={'bold'}
-								fontSize={{ xs: '0.7rem', md: '1.25rem' }}>
+								fontSize={{ xs: '1.25rem', md: '1.25rem' }}>
 								Se vårt galleri
 							</Typography>
 						</Button>
@@ -213,71 +213,28 @@ export default function Landing() {
 					</Typography>
 				</Divider>
 
+				{/* Landing Cards Section */}
 				<Box
 					sx={{
-						display: 'flex',
-						flexDirection: 'row',
-						justifyContent: 'center',
-						pt: 5,
-						gap: 10,
-					}}>
-					<Card sx={defaultCardStyles.defaultCardStyle} elevation={4}>
-						<CustomCardMedia image={HousePaintingImage} />
-						<CardContent sx={defaultCardStyles.defaultCardContentStyle}>
-							<Typography variant="h3" color={'text.dark'}>
-								Målning av Bostäder
-							</Typography>
-							<Typography variant="p2" color={'text.dark'} pt={2}>
-								Från mysiga sovrum till rymliga vardagsrum specialiserar vi oss
-								på att förvandla ditt hem till ett välkomnande och stilfullt
-								utrymme.
-							</Typography>
-						</CardContent>
-					</Card>
-					<Card sx={defaultCardStyles.defaultCardStyle} elevation={4}>
-						<CustomCardMedia image={CommercialPaintingImage} />
-						<CardContent sx={defaultCardStyles.defaultCardContentStyle}>
-							<Typography variant="h3" color={'dark.dark'}>
-								Målning av Företag
-							</Typography>
-							<Typography variant="p2" color={'dark.dark'} pt={2}>
-								Vi förstår vikten av att bibehålla en professionell image för
-								ditt företag. Våra kommersiella målningstjänster anpassas efter
-								dina behov, oavsett om det är ett kontor, en restaurang eller en
-								butik.
-							</Typography>
-						</CardContent>
-					</Card>
-					<Card sx={defaultCardStyles.defaultCardStyle} elevation={4}>
-						<CustomCardMedia image={OutdoorsPaintingImage} />
-						<CardContent sx={defaultCardStyles.defaultCardContentStyle}>
-							<Typography variant="h3" color={'dark.dark'}>
-								Utomhusmålning
-							</Typography>
-							<Typography variant="p2" color={'dark.dark'} pt={2}>
-								Höj värdet på din fastighet med en väl omhändertagen fasad med
-								hjälp av våra utomhusmålningstjänster. Vi använder hållbara,
-								väderbeständiga färger för att skydda din investering.
-							</Typography>
-						</CardContent>
-					</Card>
-				</Box>
-				<Box
-					sx={{
+						py: 10,
 						display: 'flex',
 						justifyContent: 'center',
-						alignItems: 'center',
-						gap: 10,
-						py: 5,
-						flexDirection: { xs: 'column', md: 'row' },
+						width: '100svw',
 					}}>
-					<Cards.ExperienceCard />
-					<Cards.SolutionsCard />
-					<Cards.SatisfactionCard />
+					<LandingPageCarousel sx={{ width: '100svw' }} />
 				</Box>
+				<Typography variant="h4" color={'light.main'} textAlign={'center'}>
+					Dra åt sidan för att se flera kort
+				</Typography>
+
+				{/* End of Landing Cards Section */}
 			</Box>
-			<Box width={'50rem'} textAlign={'left'} py={10}>
-				<Typography variant="h2" color={'action.main'} ml={1}>
+			<Box width={{ xs: '90svw', md: '50rem' }} textAlign={'left'} py={10}>
+				<Typography
+					variant="h2"
+					color={'action.main'}
+					ml={1}
+					fontSize={{ xs: '1.5rem', md: '1.75rem' }}>
 					Tveka inte över att kontakta oss för en offert!
 				</Typography>
 				<br />
