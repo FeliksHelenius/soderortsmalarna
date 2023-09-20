@@ -36,7 +36,7 @@ export default function Header() {
 				alignItems: 'center',
 				position: { xs: 'fixed', md: 'sticky' },
 				height: { xs: '4rem', md: '6rem' },
-				bgcolor: { xs: 'dark.main', md: 'primary.main' },
+				bgcolor: { xs: 'primary.main', md: 'primary.main' },
 			}}>
 			<Box
 				sx={{

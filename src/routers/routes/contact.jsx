@@ -12,14 +12,18 @@ import EmailIcon from '@mui/icons-material/Mail';
 export default function Contact() {
 	return (
 		<Container>
-			<Box py={10} display={'flex'} justifyContent={'center'}>
+			<Box
+				py={10}
+				display={'flex'}
+				justifyContent={'center'}
+				flexDirection={{ xs: 'column', md: 'row' }}>
 				{/* The contact form */}
 				<Box
 					bgcolor={'dark.main'}
-					p={10}
+					p={{ xs: 5, md: 10 }}
 					borderRadius={2}
 					sx={{
-						minWidth: '26rem',
+						minWidth: { xs: '10rem', md: '26rem' },
 					}}>
 					{/* top header */}
 					<Box>
@@ -86,7 +90,7 @@ export default function Contact() {
 							type="submit"
 							variant="contained"
 							color="action"
-							sx={{ width: '12rem', p: 2, mt: 5 }}>
+							sx={{ width: '12rem', p: 2, mt: 2 }}>
 							<Typography variant="h5" color={'light.main'}>
 								Skicka Förfrågan
 							</Typography>
@@ -100,11 +104,11 @@ export default function Contact() {
 					display={'flex'}
 					justifyContent={'center'}
 					sx={{
-						minWidth: '26rem',
+						minWidth: { xs: '10rem', md: '26rem' },
 						maxHeight: '24rem',
 					}}>
 					{/* top header */}
-					<Box p={10}>
+					<Box px={10} py={{ xs: 5, md: 10 }}>
 						<Box>
 							<Typography variant="h5" color={'text.dark'} mb={1}>
 								LÅT OSS PRATA VID

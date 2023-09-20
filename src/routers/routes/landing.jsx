@@ -184,20 +184,39 @@ export default function Landing() {
 			{/* #region top of landing for mobile view */}
 			<Box display={{ xs: 'flex', md: 'none' }}>
 				{/* first section of text */}
-				<Box>
-					<Box>
-						<Typography variant="h5" fontWeight={'bold'} color={'action.main'}>
+				<Box pt={5}>
+					<Box textAlign={'center'} px={5}>
+						<Typography variant="h3" fontWeight={'bold'} color={'action.main'}>
 							Vi Kan Måla
 						</Typography>
 						<Divider />
-						<Typography>Hello world</Typography>
+						<Typography variant="p2">
+							På Söderortsmålarna AB tvekar vi inte när det kommer till målning,
+							med våran erfarenhet och kundcentrerad inställning så kan vi
+							garantera att du blir nöjd med vårat arbete. Vi har målat för
+							Brfer, företag och privatpersoner. Vi är stolta över att kunna
+							erbjuda våra måleritjänster till dig.
+						</Typography>
+					</Box>
+					<Box textAlign={'center'} px={5} pt={5}>
+						<Typography variant="h3" fontWeight={'bold'} color={'action.main'}>
+							Vårat Uppdrag
+						</Typography>
+						<Divider />
+						<Typography variant="p2">
+							Vårat uppdrag är enkelt: att erbjuda högkvalitativa
+							målningstjänster som överträffar våra kunders förväntningar. Vi
+							förstår att ditt hem eller företag är en reflektion av din
+							personlighet och varumärke. Därför tar vi stolthet i varje
+							penseldrag och säkerställer att varje projekt blir ett konstverk.
+						</Typography>
 					</Box>
 				</Box>
 				{/* second section of text */}
 			</Box>
 			{/* #endregion of top landing for mobile view */}
 			<Box
-				mt={15}
+				mt={10}
 				pb={5}
 				bgcolor={'secondary.main'}
 				width={'100%'}

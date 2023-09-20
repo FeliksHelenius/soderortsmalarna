@@ -24,7 +24,7 @@ export default function Footer() {
 		<AppBar
 			position="relative"
 			sx={{
-				bgcolor: { xs: 'dark.main', md: 'primary.main' },
+				bgcolor: { xs: 'primary.main', md: 'primary.main' },
 			}}>
 			<Container sx={{ flexDirection: 'column' }} color={'primary'}>
 				<FullLogo
